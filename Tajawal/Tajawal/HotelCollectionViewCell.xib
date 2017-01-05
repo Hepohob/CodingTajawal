@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCollectionCell" id="1gK-rg-NiQ" customClass="HotelCollectionViewCell" customModule="Tajawal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="287"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-Ew-zdb">
+                        <rect key="frame" x="5" y="5" width="289" height="262"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sqw-ZH-X2y">
+                        <rect key="frame" x="140" y="133.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L6w-vo-zSG">
+                        <rect key="frame" x="5" y="266" width="289" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.87757012599999995" green="0.93343081729999999" blue="0.96864385190000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Jng-Ew-zdb" firstAttribute="top" secondItem="1gK-rg-NiQ" secondAttribute="top" constant="5" id="049-xu-eRd"/>
+                <constraint firstItem="L6w-vo-zSG" firstAttribute="leading" secondItem="1gK-rg-NiQ" secondAttribute="leading" constant="5" id="7fc-4Q-Nvk"/>
+                <constraint firstAttribute="bottom" secondItem="L6w-vo-zSG" secondAttribute="bottom" constant="5" id="Do6-dO-TjW"/>
+                <constraint firstItem="sqw-ZH-X2y" firstAttribute="centerY" secondItem="1gK-rg-NiQ" secondAttribute="centerY" id="Emz-xf-T1P"/>
+                <constraint firstAttribute="trailing" secondItem="Jng-Ew-zdb" secondAttribute="trailing" constant="5" id="M8e-68-mp7"/>
+                <constraint firstAttribute="trailing" secondItem="L6w-vo-zSG" secondAttribute="trailing" constant="5" id="O8B-LC-oZc"/>
+                <constraint firstItem="sqw-ZH-X2y" firstAttribute="centerX" secondItem="1gK-rg-NiQ" secondAttribute="centerX" id="Qpc-vF-oc2"/>
+                <constraint firstItem="Jng-Ew-zdb" firstAttribute="leading" secondItem="1gK-rg-NiQ" secondAttribute="leading" constant="5" id="V4w-mT-oYD"/>
+                <constraint firstAttribute="bottom" secondItem="Jng-Ew-zdb" secondAttribute="bottom" constant="20" id="Zye-gp-WB2"/>
+            </constraints>
+            <size key="customSize" width="299" height="287"/>
+            <connections>
+                <outlet property="hotelName" destination="L6w-vo-zSG" id="Dml-qH-iCW"/>
+                <outlet property="imagePlaceholder" destination="Jng-Ew-zdb" id="yf1-h8-eVY"/>
+                <outlet property="indicator" destination="sqw-ZH-X2y" id="wX2-V6-l0L"/>
+            </connections>
+            <point key="canvasLocation" x="2.5" y="10.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
