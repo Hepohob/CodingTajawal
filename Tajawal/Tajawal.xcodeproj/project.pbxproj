@@ -24,6 +24,7 @@
 		473A1C291E148CB30069D5DC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1C281E148CB30069D5DC /* ImageViewController.swift */; };
 		473A1C2C1E15067B0069D5DC /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A1C2B1E15067B0069D5DC /* POI.swift */; };
 		4777FFD11E1D375B0028207D /* TajawalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777FFD01E1D375B0028207D /* TajawalTests.swift */; };
+		4777FFD91E1E34780028207D /* HotelsCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777FFD81E1E34780028207D /* HotelsCollectionViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		4777FFCE1E1D375B0028207D /* TajawalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TajawalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4777FFD01E1D375B0028207D /* TajawalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajawalTests.swift; sourceTree = "<group>"; };
 		4777FFD21E1D375B0028207D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4777FFD81E1E34780028207D /* HotelsCollectionViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HotelsCollectionViewControllerTests.swift; path = ../Tajawal/HotelsCollectionViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		4777FFCF1E1D375B0028207D /* TajawalTests */ = {
 			isa = PBXGroup;
 			children = (
+				4777FFD81E1E34780028207D /* HotelsCollectionViewControllerTests.swift */,
 				4777FFD01E1D375B0028207D /* TajawalTests.swift */,
 				4777FFD21E1D375B0028207D /* Info.plist */,
 			);
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4777FFD11E1D375B0028207D /* TajawalTests.swift in Sources */,
+				4777FFD91E1E34780028207D /* HotelsCollectionViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D8357SCSF;
 				INFOPLIST_FILE = TajawalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -494,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D8357SCSF;
 				INFOPLIST_FILE = TajawalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

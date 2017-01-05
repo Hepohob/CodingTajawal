@@ -16,6 +16,24 @@ class REST: NSObject {
     
     static var hotels: [Hotel]?
    
+    class func loadHotels(_ successHandler:@escaping (_ hotels:[Hotel]) -> () ) {
+        var resultHotels: [Hotel] = []
+        Alamofire.request(URLs.base).responseJSON { response in
+            if let JSON = response.result.value {
+                if let hotelDictionary = JSON as? Dictionary<String, Any> {
+                    if let hotelsArray = hotelDictionary["hotel"]  as? [NSDictionary] {
+                        for hotelElement in hotelsArray {
+                            if let hotel = Hotel.init(data: hotelElement as NSDictionary?) {
+                                resultHotels.append(hotel)
+                            }
+                        }
+                        successHandler(resultHotels)
+                    }
+                }
+            }
+        }
+    }
+    
     class func getHotels(){
         hotels = []
         Alamofire.request(URLs.base).responseJSON { response in

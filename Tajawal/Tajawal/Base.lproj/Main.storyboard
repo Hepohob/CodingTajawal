@@ -32,7 +32,7 @@
         <!--Hotels Collection View Controller-->
         <scene sceneID="z5y-QL-geN">
             <objects>
-                <collectionViewController id="fV6-Cz-i9A" customClass="HotelsCollectionViewController" customModule="Tajawal" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="HotelsCollectionViewController" id="fV6-Cz-i9A" customClass="HotelsCollectionViewController" customModule="Tajawal" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="aLh-5d-Rsb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
